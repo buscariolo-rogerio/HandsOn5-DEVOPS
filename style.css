@@ -1,0 +1,136 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Fundo escuro profundo */
+    color: #e0e0e0; /* Texto claro para leitura */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #1f1f1f 0%, #121212 100%);
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    color: #03dac6; /* Cor de destaque (Ciano) */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+/* Container Principal */
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilização das Seções */
+section {
+    background-color: #1e1e1e; /* Cinza levemente mais claro que o fundo */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    border-color: #03dac6; /* Brilho ao passar o mouse */
+}
+
+h2 {
+    color: #bb86fc; /* Cor secundária (Lilás) */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-left: 4px solid #03dac6;
+    padding-left: 15px;
+}
+
+/* Estilo para links (Navegação de alunos) */
+nav a {
+    display: inline-block;
+    color: #03dac6;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid #03dac6;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: #03dac6;
+    color: #121212;
+}
+
+/* Listas de Curiosidades */
+ul {
+    list-style: none; /* Remove bolinhas padrão */
+}
+
+ul li {
+    background: #252525;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    position: relative;
+    border-left: 2px solid #bb86fc;
+}
+
+ul li::before {
+    content: "📍"; /* Ícone antes de cada curiosidade */
+    margin-right: 10px;
+}
+
+/* Destaques de texto */
+strong {
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 20px;
+    }
+}
